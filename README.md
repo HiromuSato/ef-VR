@@ -1,8 +1,8 @@
 ## About ef-VR
 3D visualization of [ef-Site](http://service.pdbj.org/eF-site/) with Virtual Reality  
-You can see example of use on [YouTube](https://www.youtube.com/channel/UCmdW1BnFFjxUAdUK1jUqcDg)
+You can see demo movie on [YouTube](https://www.youtube.com/channel/UCmdW1BnFFjxUAdUK1jUqcDg)
 
-## How to get demo app
+## How to get app
 Releases -> ef-VR.zip
 
 ## Third party
