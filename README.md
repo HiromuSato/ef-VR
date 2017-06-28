@@ -1,9 +1,10 @@
 ## About ef-VR
-This is app to see [ef-Site](http://service.pdbj.org/eF-site/) data with Virtual Reality  
-You can see demo movie on [YouTube](https://www.youtube.com/channel/UCmdW1BnFFjxUAdUK1jUqcDg)
+This is app to see [eF-site](http://service.pdbj.org/eF-site/) data with Virtual Reality  
+You can see demonstration movies on [YouTube](https://www.youtube.com/channel/UCmdW1BnFFjxUAdUK1jUqcDg)
 
-## How to get app
-Releases -> ef-VR.zip
+## Getting started
+[Releases](https://github.com/HiromuSato/ef-VR/releases) -> ef-VR.zip  
+Unzip and lauch ef-VR.exe
 
 ## Requirement
 WIP...
