@@ -13,9 +13,9 @@ Unzip and lauch ef-VR.exe
 * Windows 10 Pro
 * GeForce GTX 1080
 
-## Third party
+## LICENSE
 * [VRTK](https://github.com/thestonefox/VRTK), Copyright (c) 2016 TheStonefox, Licensed under [MIT](https://github.com/thestonefox/VRTK/blob/master/LICENSE)  
-* [Oculus SDK](https://developer.oculus.com/licenses/sdk-3.4.1/)
+* [Oculus SDK](https://developer.oculus.com/licenses/sdk-3.4.1/), Copyright © 2014-2017 Oculus VR, LLC. All rights reserved
 
 ## Contact
 Graduate School of Information Sciences, Tohoku University [Kinoshita & Obayashi Lab](http://www.sb.ecei.tohoku.ac.jp/index-en.html)  
