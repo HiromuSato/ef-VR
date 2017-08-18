@@ -15,6 +15,7 @@ Unzip and lauch ef-VR.exe
 
 ## Third party
 [VRTK](https://github.com/thestonefox/VRTK), Copyright (c) 2016 TheStonefox, Licensed under [MIT](https://github.com/thestonefox/VRTK/blob/master/LICENSE)
+[Oculus SDK](https://developer.oculus.com/licenses/sdk-3.4.1/)
 
 ## Contact
 Graduate School of Information Sciences, Tohoku University [Kinoshita & Obayashi Lab](http://www.sb.ecei.tohoku.ac.jp/index-en.html)  
