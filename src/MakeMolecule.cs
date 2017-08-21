@@ -14,7 +14,7 @@ public class MakeMolecule : MonoBehaviour {
 	public Material molMat;
 	public float softness;
 
-	private string apiUrl = "http://ipr.pdbj.org/rest/displayEFSiteFile?format=efvet&id=";
+	private string apiUrl = "https://pdbj.org/rest/displayEFSiteFile?format=efvet&id=";
 
 	private List<Color> vertexColor = new List<Color>(){
 		new Color(1.00f, 1.00f, 1.00f, 1.00f),
@@ -48,12 +48,18 @@ public class MakeMolecule : MonoBehaviour {
 	private List<string> flaggedAminos = new List<string> () {"LEU", "ILE", "VAL", "MET", "PRO", "PHE", "TRP", "TYR", "ALA"};
 	private List<string> flaggedAtoms = new List<string> () {"N", "HN", "CA", "C", "O", "OT", "OH", "HH"};
 
+	public bool AcceptAllCertifications(object sender, System.Security.Cryptography.X509Certificates.X509Certificate certification, System.Security.Cryptography.X509Certificates.X509Chain chain, System.Net.Security.SslPolicyErrors sslPolicyErrors)
+	{
+		return true;
+	}
+
 	public void SpawnMolecule(){
 		error.text = "";
 		GameObject mol = readEfvet(input.text, molScale);
 		if (mol != null) {
 			mol.transform.tag = "Mol";
 			input.text = "";
+			//GameObject.Find ("Main Camera").transform.position = mol.GetComponent<Renderer>().bounds.center - new Vector3(0f, 0f, 0.5f);
 		}
 	}
 
@@ -61,6 +67,7 @@ public class MakeMolecule : MonoBehaviour {
 		string[] lines = new string[] {};
 
 		try{
+			ServicePointManager.ServerCertificateValidationCallback = new System.Net.Security.RemoteCertificateValidationCallback(AcceptAllCertifications);
 			HttpWebRequest request = (HttpWebRequest)WebRequest.Create (apiUrl + name);
 			HttpWebResponse response = (HttpWebResponse)request.GetResponse ();
 
